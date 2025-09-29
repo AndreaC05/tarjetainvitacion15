@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   /* margin-top: 380px; */
-  margin-bottom: 100px;
+  margin-bottom: 400px;
 }
 
 .img_logo {
@@ -187,7 +187,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .buton_direccion,
@@ -200,33 +200,35 @@
 
 .buton_direccion i,
 .buton_whatsapp i {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: white;
-  animation: goldGlow 2s infinite alternate;
+  animation: blueGlow 2s infinite alternate;
 }
 
-@keyframes goldGlow {
+@keyframes blueGlow {
   0% {
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4), 0 0 10px rgba(255, 7, 7, 0.4),
-      0 0 20px rgba(255, 0, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.2);
+    text-shadow: 0 0 5px #0263b066, 0 0 10px #0263b066,
+      0 0 20px #0263b066, 0 0 30px #0263b033;
   }
   100% {
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.9), 0 0 20px rgba(255, 7, 7, 0.8),
-      0 0 40px rgba(255, 0, 0, 0.7), 0 0 80px rgba(255, 0, 0, 0.6);
+    text-shadow: 0 0 10px rgba(2, 99, 176, 0.9),
+      0 0 20px rgba(2, 99, 176, 0.8),
+      0 0 40px rgba(2, 99, 176, 0.7),
+      0 0 80px rgba(2, 99, 176, 0.6);
   }
 }
 
 .buton_direccion Button,
 .buton_whatsapp Button {
-  background-color: rgba(255, 255, 255, 0.493);
-  color: #ff3153;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #0263b0;
   border: none;
   padding: 5px 20px;
-  font-family: "Pacifico", cursive;
+  font-family: "Sriracha", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -234,28 +236,32 @@
 
 .buton_direccion Button:hover,
 .buton_whatsapp Button:hover {
-  background-color: rgba(255, 218, 218, 0.8);
-  color: rgb(255, 255, 255);
-  box-shadow: 0 0 20px rgba(255, 231, 231, 0.8),
-    0 0 40px rgba(231, 179, 179, 0.6), 0 0 60px rgba(255, 235, 235, 0.4);
-  animation: pulse 1.5s infinite;
+  background-color: rgba(2, 99, 176, 0.2);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(2, 99, 176, 0.8),
+    0 0 40px rgba(2, 99, 176, 0.6),
+    0 0 60px rgba(2, 99, 176, 0.4);
+  animation: pulseBlue 1.5s infinite;
 }
 
-@keyframes pulse {
+@keyframes pulseBlue {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(255, 200, 200, 0.8),
-      0 0 40px rgba(255, 159, 159, 0.6), 0 0 60px rgba(211, 131, 131, 0.4);
+    box-shadow: 0 0 20px rgba(2, 99, 176, 0.8),
+      0 0 40px rgba(2, 99, 176, 0.6),
+      0 0 60px rgba(2, 99, 176, 0.4);
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgb(250, 163, 163), 0 0 60px rgba(197, 122, 122, 0.8),
-      0 0 90px rgba(255, 132, 132, 0.6);
+    box-shadow: 0 0 30px rgb(2, 99, 176),
+      0 0 60px rgba(2, 99, 176, 0.8),
+      0 0 90px rgba(2, 99, 176, 0.6);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(255, 178, 178, 0.8),
-      0 0 40px rgba(255, 160, 160, 0.6), 0 0 60px rgba(252, 119, 119, 0.4);
+    box-shadow: 0 0 20px rgba(2, 99, 176, 0.8),
+      0 0 40px rgba(2, 99, 176, 0.6),
+      0 0 60px rgba(2, 99, 176, 0.4);
   }
 }
 
